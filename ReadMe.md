@@ -3,11 +3,13 @@ Wilson Chen, Omicsoft
 2018/03/09
 
 # Description
-OmicPythonApi was designed to be a python package that allows users to run oscript via oshell within Python. Input to OmicPythonApi normally is identical to the corresponding oscripts. The output of OmicPythonApi totally depends on the oscripts behind OmicPythonApi.
+OmicPythonApi was designed to be a python package that allows users to run oscript via oshell within Python. It functions as a oscript engine within Python Environment.
 
-Users may retrieve the oscripts of an OmicPythonApi object in its Oscript field. Users may refer to Omicsoft Wiki for input parameters and output of the corresponding oscripts.
+Python users may use the built-in APIs in the package for Omicsoft Land queries. We have currently wrapped most ArrayLand query oscript procs in OmicPythonApi as buit-in APIs. When users run the API, the oscript engine in OmicPythonApi will run the oscripts behind the API to download query results to text files. Users may then use other Python packages ( (Pandas etc) to load the text files and perform downstream analysis.
 
-To perform land queries, users may use the apis in this package to download query results to text files, then use other Python packages ( (Pandas etc) to load the text files and perform downstream analysis.
+Python users may also customize OmicPythonApi to run user-defined oscripts. This extends OmicPythonApi from a Land query API tool to a general oscript engine in Python. With this feature, bioinformatitians and ArrayServer administrators may perform custom Omicsoft data analysis as well as systematic management of sample, project and user in Array Server.
+
+Input to OmicPythonApi standard APIs normally is identical to the corresponding oscripts. The output of OmicPythonApi totally depends on the oscripts behind OmicPythonApi. Users may retrieve the oscripts of an OmicPythonApi object in its Oscript field. Users may refer to Omicsoft Wiki for input parameters and output of the corresponding oscripts.
 
 The key field and functions in class OmicPythonApi and its child class are a oscriptTemplate field, a oscript field, a SetOscriptTemplate, a MakeOscript and a RunOscriptFromOshell function. OscriptTemplate holds a oscript template whose input parameters will be set by SetOscriptTemplat function. MakeOscript function modifies the input field in OscriptTemplate field using input from __init__. RunOscriptFromOshell submits oscripts to oshell.
 
