@@ -1,0 +1,2 @@
+UserID	UserGroups	Password	FullName	Organization	Department	Laboratory	Position	Notes	Email	Phone	Address
+wilson5	standard users,editors,curators	omicsoft	wilson chen	Qiagen	Omicsoft	Support	Scientist	test	wilson.chen@qiagen.com	xxxx	xxxx
