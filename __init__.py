@@ -17,10 +17,17 @@ from OmicPythonApi.StandardApi.DownloadArrayLandComparisonData import *
 from OmicPythonApi.StandardApi.TextDumpArrayLandGeneComparison import *
 from OmicPythonApi.StandardApi.TextDumpArrayLandComparisonData import *
 from OmicPythonApi.StandardApi.DownloadComparisonSet import * 
-from OmicPythonApi.StandardApi.ManageUsers_Add import * 
+from OmicPythonApi.StandardApi.ManageUsers_Add import *
+from OmicPythonApi.StandardApi.ManageUsers_Update import *
+from OmicPythonApi.StandardApi.ManageUsers_Remove import * 
 
 from OmicPythonApi.CustomApi.RnaSeqPipelineInNewServerProject import *
 from OmicPythonApi.CustomApi.MapRnaSeqReadsToGenomeInNewServerProject import *
 from OmicPythonApi.CustomApi.ImportTableToLocalProject import *
 from OmicPythonApi.CustomApi.ImportMicroarrayTableToLocalProject import *
 from OmicPythonApi.CustomApi.FetchSampleMetaDataAndSampleFilePath import *
+
+from OmicPythonApi.CustomApi.DownloadAllLandMetaData import *
+
+Version='1.1.0.3'
+ReleaseDate='20181029'
